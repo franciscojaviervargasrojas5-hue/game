@@ -15,18 +15,18 @@ body {
     text-align: center;
 }
 
-/* Tarjeta principal más transparente */
+/* Tarjeta principal 100% transparente */
 .container {
-    background: rgba(240, 211, 216, 0.35); /* Cambiamos de 0.7 a 0.35 para que se vea más el fondo */
-    backdrop-filter: blur(8px);
-    -webkit-backdrop-filter: blur(8px);
+    background: transparent; /* 100% transparente, sin color de fondo */
+    backdrop-filter: none;
+    -webkit-backdrop-filter: none;
     padding: 25px;
     border-radius: 20px;
-    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.35);
+    box-shadow: none; /* Quitamos la sombra de la caja para que no se note un recuadro */
     max-width: 480px;
     width: 92%;
     animation: fadeIn 0.5s ease-in-out;
-    border: 1px solid rgba(255, 255, 255, 0.4);
+    border: none; /* Sin bordes */
 }
 .envelope-icon {
     font-size: 50px;
