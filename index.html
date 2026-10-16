@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carta Secreta para Kenia ❤️</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Elemento de audio para la música de fondo (se activa al abrir la carta) -->
+    <audio id="miMusica" src="cancion.mp3" loop></audio>
+
+    <!-- PANTALLA 1: Ingreso de Contraseña (El Sobre Cerrado) -->
+    <div class="container" id="loginContainer">
+        <div class="envelope-icon">💌</div>
+        <h1>Mensaje Secreto</h1>
+        <p>Este mensaje está protegido. Ingresa nuestra fecha especial (Ej: DIA/MES) para abrirlo:</p>
+        
+        <div class="input-group">
+            <input type="password" id="passwordInput" placeholder="Contraseña secreta...">
+            <button onclick="verificarPassword()">Abrir Carta</button>
+        </div>
+        <p id="errorMsg" class="error-text hidden">Contraseña incorrecta, intenta de nuevo amor ❤️</p>
+    </div>
+
+    <!-- PANTALLA 2: La Carta Secreta (Desbloqueada) -->
+    <div class="container hidden" id="letterContainer">
+        <h1>Para: Kenia Luciano ✨</h1>
+        <div class="letter-content">
+            <p>Mi FRANIA,</p>
+            <p>🌻🌻 Si estás leyendo esto, es porque sabes exactamente cuál es nuestra fecha más especial, el dia que todo nuestra historia empezó. 🌻🌻 Quería escribirte estas líneas para recordarte lo muchísimo que significas para mí y lo valiosa que eres. 🌟⭐🌟</p>
+            <p>💝💝 Cada día a tu lado es algo mágico, es algo que siempre agradezco a Dios, algo que no todos tienen la oportunidad, y no importa el tiempo que pase, los problemas que vengan, te elegiría una y mil veces más en cualquier universo, algo que te menciono: contigo siempre hasta el infinito y mas alla mi amor. 💝💘</p>
+            <p>💞💞 Gracias por ser mi compañera, mi complice, mi amiga, aveces mi madre, pero sobre todo mi vida. 💓💖 Eres tu la unica dueña de mi paz y la dueña de mis mejores sonrisas. Te amo siempre con todo mi corazón. 💖</p>
+            
+            <!-- Foto de Francho al final del texto -->
+            <div class="signature-photo-container">
+                <img src="foto_francho.jpg.jpeg" alt="Francho" class="signature-photo">
+                <p class="signature-text">Atentamente tu bichito Francho.</p>
+            </div>
+        </div>
+        <button onclick="location.reload()">Cerrar carta</button>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
