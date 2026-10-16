@@ -1,11 +1,11 @@
 body {
     margin: 0;
     padding: 0;
-    /* La imagen se repite horizontalmente (50% de ancho cada repetición = mitad y mitad) */
+    /* Fondo con una sola imagen centrada que cubre toda la pantalla */
     background-image: linear-gradient(rgba(0, 0, 0, 0.45), rgba(0, 0, 0, 0.45)), url('fondo.jpg.jpeg');
-    background-size: 50% 100%; /* 50% de ancho por 100% de alto */
-    background-repeat: repeat-x; /* Se repite a lo largo del eje horizontal */
-    background-position: left top;
+    background-size: cover; /* La imagen cubre toda la pantalla de forma limpia */
+    background-repeat: no-repeat; /* Evita que se repita */
+    background-position: center; /* Centra la foto perfectamente */
     font-family: 'Arial', sans-serif;
     display: flex;
     justify-content: center;
