@@ -17,7 +17,7 @@ body {
 
 /* Tarjeta principal más transparente */
 .container {
-    background: rgba(223, 150, 162, 0.35); /* Cambiamos de 0.7 a 0.35 para que se vea más el fondo */
+    background: rgba(240, 211, 216, 0.35); /* Cambiamos de 0.7 a 0.35 para que se vea más el fondo */
     backdrop-filter: blur(8px);
     -webkit-backdrop-filter: blur(8px);
     padding: 25px;
